@@ -71,14 +71,14 @@ The following files are expected in the ./inputs directory:
    
    counts.txt: The total number of foci per study
    
-   foci.txt: The list of three-dimensional foci coordinates (after transformed into voxel space) and the indices of study where they comes from (2107 foci and 157                studies in total). 
+   foci.txt: The list of three-dimensional foci coordinates (after transformed into voxel space) and the indices of study where they comes from (2107 foci and 157 studies in total). 
    
    paper.txt: The publication identifier for each study (Studies from the same paper appear consecutively).
    
    
 The following files are expected in the ./outputs directory:
    
-   burnin.txt: A list of step size (eplison), marginal standard deviations (sigma), correlation decay parameters (rho) and overall mean parameter (beta) for each                  covariates, log-likelihood, Hamiltonian and iteration index for each burnin iteration.
+   burnin.txt: A list of step size (eplison), marginal standard deviations (sigma), correlation decay parameters (rho) and overall mean parameter (beta) for each covariates, log-likelihood, Hamiltonian and iteration index for each burnin iteration.
    
    rfx.txt: The updated random effects for 157 studies in each burnin iteration.
    
