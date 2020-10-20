@@ -66,4 +66,31 @@ The following files are expected in the ./inputs directory:
 
    gamma.txt: Standard normal variates, 144*192*144=3981312 for each spatially 
               varying covariate.  If missing, random numbers are generated.
+              
+   Z.txt: precomputed design matrix.
+   
+   counts.txt: The total number of foci per study
+   
+   foci.txt: The list of three-dimensional foci coordinates (after transformed into voxel space) and the indices of study where they comes from (2107 foci and 157                studies in total). 
+   
+   paper.txt: The publication identifier for each study (Studies from the same paper appear consecutively).
+   
+   
+The following files are expected in the ./outputs directory:
+   
+   burnin.txt: A list of step size (eplison), marginal standard deviations (sigma), correlation decay parameters (rho) and overall mean parameter (beta) for each                  covariates, log-likelihood, Hamiltonian and iteration index for each burnin iteration.
+   
+   rfx.txt: The updated random effects for 157 studies in each burnin iteration.
+   
+   hmc.txt: Same as `burnin.txt`, but for each HMC iteration.
+   
+   alpha.txt: Same as `rfx.txt`, but for each HMC iteration.
+   
+   starting.txt: Save a snapshot of beta for each covariates, sigma, rho and gamma for each spatially varying covariate every 500 iterations.
+
+   gps/gp_*.txt: Save snapshots at every within-brain voxel in the extended grid for the GPs (The frequency is based on the parameter `Save`).
+                 
+   gp_summaries.txt: Save voxel-vise mean and variance for spatially varying covariates at every within-brain voxel in the extended grid for the GPs.
+   
+   
 ```
