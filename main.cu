@@ -95,7 +95,7 @@ int main (int argc , char *argv[])
  	printf("              appear consecutively) \n");
 	
 	printf("\n");
-	printf("The following files are expected in the ./outputs directory:\n");
+	printf("The following files are created in the ./outputs directory:\n");
  	printf("\n");
  	printf("   burnin.txt: A list of step size (eplison), marginal standard deviations (sigma), \n");
 	printf("               correlation decay parameters (rho) and overall mean parameter (beta) \n");
@@ -1158,5 +1158,4 @@ int main (int argc , char *argv[])
     printf("\n END OF SIMULATION \n");
     exit(0);
 }
-
 
