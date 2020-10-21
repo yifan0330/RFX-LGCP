@@ -79,7 +79,7 @@ The following files are expected in the ./inputs directory:
               appear consecutively).
    
    
-The following files are expected in the ./outputs directory:
+The following files are created in the ./outputs directory:
    
    burnin.txt: A list of step size (eplison), marginal standard deviations (sigma), 
                correlation decay parameters (rho) and overall mean parameter (beta) 
