@@ -78,7 +78,51 @@ int main (int argc , char *argv[])
  	printf("\n");
  	printf("   gamma.txt: Standard normal variates, 144*192*144=3981312 for each spatially \n");
  	printf("              varying covariate.  If missing, random numbers are generated.\n");
+	    
+	printf("\n");
+ 	printf("   Z.txt: precomputed design matrix \n");
+ 	
+	printf("\n");
+ 	printf("   counts.txt: The total number of foci per study \n");
+	
+	printf("\n");
+ 	printf("   foci.txt: The list of three-dimensional foci coordinates (after transformed into \n");
+ 	printf("             voxel space) and the indices of study where they comes from (2107 foci \n");
+	printf("             and 157 studies in total) \n");
+	    
+	printf("\n");
+ 	printf("   paper.txt: The publication identifier for each study (Studies from the same paper \n");
+ 	printf("              appear consecutively) \n");
+	
+	printf("\n");
+	printf("The following files are expected in the ./outputs directory:\n");
+ 	printf("\n");
+ 	printf("   burnin.txt: A list of step size (eplison), marginal standard deviations (sigma), \n");
+	printf("               correlation decay parameters (rho) and overall mean parameter (beta) \n");
+	printf("               for each covariates, log-likelihood, Hamiltonian and iteration index \n");
+	printf("               for each burnin iteration. \n");
+	
+	printf("\n");
+ 	printf("   rfx.txt: The updated random effects for 157 studies in each burnin iteration \n");
+	    
+	printf("\n");
+ 	printf("   hmc.txt: Same as `burnin.txt`, but for each HMC iteration \n");
+	    
+	printf("\n");
+ 	printf("   alpha.txt: Same as `rfx.txt`, but for each HMC iteration \n");
+	
+   	printf("\n");
+ 	printf("   starting.txt: Save a snapshot of beta for each covariates, sigma, rho and gamma  \n");
+	printf("                 for each spatially varying covariate every 500 iterations. \n");
+	
+   	printf("\n");
+ 	printf("   gps/gp_*.txt: Save snapshots at every within-brain voxel in the extended grid for the GPs \n");
+	printf("                 (The frequency is based on the parameter `Save`) \n");
 
+   	printf("\n");
+ 	printf("   gp_summaries.txt: Save voxel-vise mean and variance for spatially varying covariates  \n");
+	printf("                     at every within-brain voxel in the extended grid for the GPs. \n");
+                 
 	exit(1);
     }
 
